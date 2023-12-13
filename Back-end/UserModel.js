@@ -16,6 +16,10 @@ const User = sequelize.define('User', {
     type: DataTypes.STRING,
     allowNull: false,
   },
+  Usertype: {
+    type: DataTypes.ENUM('user', 'admin'),
+    allowNull: false,
+  },
 });
 
 User.sync();

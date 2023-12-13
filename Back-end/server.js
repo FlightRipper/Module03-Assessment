@@ -25,6 +25,6 @@ app.use('/users', userRouter);
 app.use('/article', articleRouter);
 
 //app connection
-app.listen(9999, () => {
+app.listen(9998, () => {
   console.log('app is running and listening on port 5000');
 });

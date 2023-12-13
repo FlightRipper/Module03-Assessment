@@ -5,7 +5,7 @@ class usersController {
   //create user
   static async createUser(req, res) {
     try {
-      const { username,  password} = req.body;
+      const { username,  password, Usertype} = req.body;
       const errors = [];
 
       if (!username) {
@@ -13,6 +13,9 @@ class usersController {
       }
       if (!password) {
         errors.push("Password is required");
+      }
+      if(!Usertype) {
+        errors.push("UserType is required"); 
       }
   
       try {
@@ -27,6 +30,7 @@ class usersController {
         const newUser = await User.create({
           password,
           username,
+          Usertype,
         });
 
         if (!newUser) {

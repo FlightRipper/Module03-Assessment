@@ -1,0 +1,140 @@
+.sh7ade-page{
+    height: 100vh;
+    width: 100vw;
+    background: #F7F7F7;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.sh7ade-page-DonationForm {
+    background-color: #FFFFFF;
+    border-radius: 19px;
+    width : 80%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    gap : 8%;
+    align-items: center; 
+}
+
+.sh7abe-page-EnterDonation-Text{
+    color: #38BFC5;
+    font-family: Signika;
+    padding-bottom: 0;
+    font: bold;
+    border-bottom: 2px;
+    border-color: #38BFC5;
+    font-size: xxx-large;
+    padding-top: 50px;
+}
+
+.sh7ade-page-Text-Form{
+   color: #838694;
+   font-size: large; 
+   padding: 0 30px;
+   text-align: center;
+}
+
+.sh7ade-page-ThankYouAndAmount{
+    display: flex;
+    gap: 30px;
+}
+
+.sh7ade-page-input input{
+    border-radius: 5px;
+    width: 60%;
+    height: 100%;
+}
+
+.sh7ade-page-input input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+ -webkit-appearance: none;
+ margin: 0;
+}
+
+.sh7ade-page-SubmitButton {
+    border-radius: 7px;
+    width: 80%;
+    height: 10%;
+    font-family: Signika;
+    font: bold;
+    background-color: #38BFC5;
+    border: none;
+    transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
+   
+.sh7ade-page-SubmitButton:hover {
+    background-color: #28A7B5;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.sh7ade-page-SubmitButton:active {
+    background-color: #28A7B5;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transform: translateY(-5px);
+}
+   
+/* Left Side related */
+.sh7ade-page-LeftSide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+    gap: 15px;
+    width: 70%;
+}
+.sh7abe-page-LeftSide-Title{
+    color: #134F50;
+    text-align: center;
+    font-family: Signika;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.sh7abe-page-LeftSide-Sha7adImage{
+    width: 80%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+.sh7ade-page-LeftSide-CreatedByWithImage{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sh7ade-page-LeftSide-CreatedBy{
+    color: #38BFC5;
+    font-family: Signika;
+    font-size: large;
+}
+
+.sh7ade-page-LeftSide-CreatedAtWithImage{
+    display: flex;
+    align-items: center;
+    gap :10px;
+}
+
+.sh7ade-page-LeftSide-CreatedAt{
+    color: #38BFC5;
+    font-family: Signika;
+    font-size: large;
+}
+
+.sh7ade-page-LeftSide-Description{
+    padding: 0 15px;
+    width: 350px;
+}
+
+@media (max-width: 768px) {
+    .sh7ade-page{
+        grid-template-columns: 1fr;
+    }
+    .sh7ade-page-Text-Form{
+        font-size: medium;
+    }
+}
